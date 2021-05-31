@@ -11,3 +11,8 @@ def test_five(capsys):
         fizzBuzz.fizzbuzz()
         out = capsys.readouterr().out.split('\n')[:-1]
         assert out[i]== 'Buzz'
+def test_3_5(capsys):
+    for i in [14, 29]:
+        fizzBuzz.fizzbuzz()
+        out = capsys.readouterr().out.split('\n')[:-1]
+        assert out[i]== 'FizzBuzz'
