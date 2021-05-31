@@ -6,3 +6,8 @@ def test_three(capsys):
         fizzBuzz.fizzbuzz()
         out = capsys.readouterr().out.split('\n')[:-1]
         assert out[i]== 'Fizz'
+def test_five(capsys):
+    for i in [5, 10, 15, 20]:
+        fizzBuzz.fizzbuzz()
+        out = capsys.readouterr().out.split('\n')[:-1]
+        assert out[i]== 'Buzz'
