@@ -10,3 +10,5 @@ def leap_year(year):
         else:
             #print(year, "is a leap year\n")
             return "yes"
+    else:
+        return "no"
